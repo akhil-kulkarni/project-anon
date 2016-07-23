@@ -1,0 +1,79 @@
+#Common Ignores
+.idea/
+.temp/
+.vscode/
+.DS_Store
+.tmp
+.exe
+.swp
+.swo
+.log
+.sass-cache
+.editorconfig
+.class
+
+#ionic
+node_modules/
+plugins/
+
+#Platform iOS
+*.mode1v3
+*.perspectivev3
+*.pbxuser
+platforms/ios/build
+
+#Platform Android
+platforms/android/build.xml
+platforms/android/local.properties
+platforms/android/gradlew
+platforms/android/gradlew.bat
+platforms/android/gradle
+
+#Ant builds
+platforms/android/ant-build
+platforms/android/ant-gen
+
+#Eclipse builds
+platforms/android/gen
+platforms/android/out
+
+#Gradle builds
+platforms/android/build
+
+# Built application files
+build/
+
+# Crashlytics configuations
+com_crashlytics_export_strings.xml
+
+# Local configuration file (sdk path, etc)
+local.properties
+
+# Gradle generated files
+platforms/android/.gradle/
+
+# Signing files
+.signing/
+
+# User-specific configurations
+platforms/android/.idea/libraries/
+platforms/android/.idea/workspace.xml
+platforms/android/.idea/tasks.xml
+platforms/android/.idea/.name
+platforms/android/.idea/compiler.xml
+platforms/android/.idea/copyright/profiles_settings.xml
+platforms/android/.idea/encodings.xml
+platforms/android/.idea/misc.xml
+platforms/android/.idea/modules.xml
+platforms/android/.idea/scopes/scope_settings.xml
+platforms/android/.idea/vcs.xml
+platforms/android/*.iml
+
+# OS-specific files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db

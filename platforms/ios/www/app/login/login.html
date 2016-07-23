@@ -1,0 +1,24 @@
+<ion-view view-title="Login" name="login-view">
+	<ion-content class="padding">
+		<div>
+			<form ng-submit="login.onSubmit()">
+				<div class="list list-inset">
+					<label class="item item-input">
+						<input type="text" placeholder="Username" ng-model="login.username">
+					</label>
+					<label class="item item-input">
+						<input type="password" placeholder="Password" ng-model="login.password">
+					</label>
+				</div>
+				<button class="button button-block button-positive" type="submit">Login</button>
+			</form>
+
+			<div style="text-align: center"> --- OR --- </div>
+
+			<div>
+				<button class="button button-block button-positive" ng-click="login.signInGoogle()">Sign in with Google!</button>
+			</div>
+
+		</div>
+	</ion-content>
+</ion-view>
