@@ -1,0 +1,36 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "cordova-plugin-console": {
+            "PACKAGE_NAME": "com.ak.anon"
+        },
+        "cordova-plugin-device": {
+            "PACKAGE_NAME": "com.ak.anon"
+        },
+        "cordova-plugin-splashscreen": {
+            "PACKAGE_NAME": "com.ak.anon"
+        },
+        "cordova-plugin-statusbar": {
+            "PACKAGE_NAME": "com.ak.anon"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "com.ak.anon"
+        },
+        "cordova-sqlite-storage": {
+            "PACKAGE_NAME": "com.ak.anon"
+        },
+        "ionic-plugin-keyboard": {
+            "PACKAGE_NAME": "com.ak.anon"
+        },
+        "cordova-plugin-inappbrowser": {
+            "PACKAGE_NAME": "com.ak.anon"
+        }
+    },
+    "dependent_plugins": {}
+}
