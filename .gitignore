@@ -13,7 +13,6 @@
 .class
 
 #ionic
-node_modules/
 plugins/
 
 #Platform iOS
