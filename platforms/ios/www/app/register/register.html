@@ -1,0 +1,47 @@
+<ion-view view-title="Register" name="register-view">
+	<ion-content class="padding">
+		<div>
+			<form id="registerForm" name="registerForm" ng-submit="rc.onSubmit()">
+				<div class="list list-inset">
+					<label class="item item-input">
+						<input type="text" placeholder="Username" ng-model="rc.regForm.username"/>
+					</label>
+					<label class="item item-input">
+						<input type="password" placeholder="Password" ng-model="rc.regForm.password"/>
+					</label>
+					<label class="item item-input">
+						<input type="text" placeholder="First Name" ng-model="rc.regForm.firstName"/>
+					</label>
+					<label class="item item-input">
+						<input type="text" placeholder="Middle Name" ng-model="rc.regForm.middleName"/>
+					</label>
+					<label class="item item-input">
+						<input type="text" placeholder="Last Name" ng-model="rc.regForm.lastName"/>
+					</label>
+					<label class="item item-input">
+						<input type="text" placeholder="Email-Id" ng-model="rc.regForm.emailId"/>
+					</label>
+					<label class="item item-input">
+						<input type="date" placeholder="Date of Birth" ng-model="rc.regForm.dob"/>
+					</label>
+					<label class="item item-input">
+						<input type="text" placeholder="Occupation" ng-model="rc.regForm.occupation"/>
+					</label>
+					<label class="item item-input">
+						<select/> <!-- country -->
+					</label>
+					<label class="item item-input">
+						<input type="text" placeholder="State" ng-model="rc.regForm.state"/>
+					</label>
+					<label class="item item-input">
+						<input type="text" placeholder="City" ng-model="rc.regForm.city"/>
+					</label>
+					<label class="item item-input">
+						<input type="text" placeholder="Zipcode" ng-model="rc.regForm.zipcode"/>
+					</label>
+				</div>
+				<button class="button button-block button-positive" type="submit" ng-disabled="registerForm.$invalid">Register</button>
+			</form>
+		</div>
+	</ion-content>
+</ion-view>
