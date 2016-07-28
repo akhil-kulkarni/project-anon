@@ -12,6 +12,11 @@ app.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $ur
 		url: "/profile",
 		templateUrl: "app/profile/profile.html"/*,
 		controller: "ProfileCtrl as profile"*/
+	})
+	.state("register", {
+		url: "/register",
+		templateUrl: "app/register/register.html",
+		controller: "RegisterCtrl as rc"
 	});
 
 	// if none of the above states are matched, use this as the fallback
