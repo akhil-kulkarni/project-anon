@@ -4,40 +4,56 @@
 			<form id="registerForm" name="registerForm" ng-submit="rc.onSubmit()">
 				<div class="list list-inset">
 					<label class="item item-input">
-						<input type="text" placeholder="Username" ng-model="rc.regForm.username"/>
+						Username:
+						<input type="text" placeholder="Username" ng-model="rc.regForm.USERNAME"/>
 					</label>
 					<label class="item item-input">
-						<input type="password" placeholder="Password" ng-model="rc.regForm.password"/>
+						Password:
+						<input type="password" placeholder="Password" ng-model="rc.regForm.PASSWORD"/>
 					</label>
 					<label class="item item-input">
-						<input type="text" placeholder="First Name" ng-model="rc.regForm.firstName"/>
+						First Name:
+						<input type="text" placeholder="First Name" ng-model="rc.regForm.FIRST_NAME"/>
 					</label>
 					<label class="item item-input">
-						<input type="text" placeholder="Middle Name" ng-model="rc.regForm.middleName"/>
+						Middle Name:
+						<input type="text" placeholder="Middle Name" ng-model="rc.regForm.MIDDLE_NAME"/>
 					</label>
 					<label class="item item-input">
-						<input type="text" placeholder="Last Name" ng-model="rc.regForm.lastName"/>
+						Last Name:
+						<input type="text" placeholder="Last Name" ng-model="rc.regForm.LAST_NAME"/>
 					</label>
 					<label class="item item-input">
-						<input type="text" placeholder="Email-Id" ng-model="rc.regForm.emailId"/>
+						Email-Id:
+						<input type="text" placeholder="Email-Id" ng-model="rc.regForm.EMAIL_ID"/>
 					</label>
 					<label class="item item-input">
-						<input type="date" placeholder="Date of Birth" ng-model="rc.regForm.dob"/>
+						Date of Birth:
+						<input type="date" placeholder="Date of Birth" ng-model="rc.regForm.DOB"/>
 					</label>
 					<label class="item item-input">
-						<input type="text" placeholder="Occupation" ng-model="rc.regForm.occupation"/>
+						Occupation:
+						<input type="text" placeholder="Occupation" ng-model="rc.regForm.OCCUPATION"/>
 					</label>
 					<label class="item item-input">
-						<select/> <!-- country -->
+						Sex:
+						<select ng-options="option.value as option.display for option in rc.sexOptionList" ng-model="rc.regForm.SEX"></select>
 					</label>
 					<label class="item item-input">
-						<input type="text" placeholder="State" ng-model="rc.regForm.state"/>
+						Country:
+						<select ng-options="option.country_code as option.country_name for option in rc.countryOptionsList" ng-model="rc.regForm.COUNTRY" ng-change="rc.onCountryChange()"></select>
 					</label>
 					<label class="item item-input">
-						<input type="text" placeholder="City" ng-model="rc.regForm.city"/>
+						State:
+						<input type="text" placeholder="State" ng-model="rc.regForm.STATE"/>
 					</label>
 					<label class="item item-input">
-						<input type="text" placeholder="Zipcode" ng-model="rc.regForm.zipcode"/>
+						City:
+						<input type="text" placeholder="City" ng-model="rc.regForm.CITY"/>
+					</label>
+					<label class="item item-input">
+						Zipcode:
+						<input type="text" placeholder="Zipcode" ng-model="rc.regForm.ZIPCODE"/>
 					</label>
 				</div>
 				<button class="button button-block button-positive" type="submit" ng-disabled="registerForm.$invalid">Register</button>

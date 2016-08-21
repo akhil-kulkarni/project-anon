@@ -3,8 +3,8 @@ loginModule.controller('LoginCtrl',['LoginService', 'CommonService', '$state', f
 	this.password = 'test';
 
 	this.onSubmit = function(){
-		//LoginService.onSubmit(this.username, this.password);
-		alert(CommonService.test());
+		LoginService.onSubmit(this.username, this.password);
+		//alert(CommonService.test());
 	};
 
 	this.signInGoogle = function(){
@@ -29,7 +29,7 @@ loginModule.factory('LoginService',['$http', '$state', function($http, $state){
 			console.log("password: " + password);
 			$http({
 				method: 'POST',
-				url: 'http://192.168.1.236:3000/login',
+				url: 'http://192.168.1.4:3000/login',
 				headers: {'Content-Type': 'application/json'},
 				data: {"Key": {"REQ": {"USERNAME": username, "PASSWORD": password}}}
 			}).then(
