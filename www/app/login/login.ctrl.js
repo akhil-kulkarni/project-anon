@@ -29,7 +29,7 @@ loginModule.factory('LoginService',['$http', '$state', function($http, $state){
 			console.log("password: " + password);
 			$http({
 				method: 'POST',
-				url: 'http://192.168.1.4:3000/login',
+				url: URL +'/login',
 				headers: {'Content-Type': 'application/json'},
 				data: {"Key": {"REQ": {"USERNAME": username, "PASSWORD": password}}}
 			}).then(

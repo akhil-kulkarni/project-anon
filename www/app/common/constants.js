@@ -6,3 +6,5 @@ var PRINT_EXCEPTION = true;
 var debug = function(){};
 var error = function(){};
 var exception = function(){};
+
+var URL = "http://192.168.1.10:3000";
